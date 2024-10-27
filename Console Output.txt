@@ -1,0 +1,20 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/WebApp-Deployment
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/WebApp-Deployment/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/SzekelyBoti/Jenkins-project.git # timeout=10
+Fetching upstream changes from https://github.com/SzekelyBoti/Jenkins-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/SzekelyBoti/Jenkins-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision f05b6f18a52feb2146b33b35d7bcbbde7067f267 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f05b6f18a52feb2146b33b35d7bcbbde7067f267 # timeout=10
+Commit message: "html file added"
+First time build. Skipping changelog.
+Archiving artifacts
+Finished: SUCCESS
